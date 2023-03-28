@@ -1,6 +1,6 @@
 from sphinx import *
 from create import *
-# from magician import *
+from magician import *
 
 
 def call_generic():
@@ -22,7 +22,7 @@ def call_generic():
             monster.attack(player)
             time.sleep(0.5)
             player.show_status()
-            monster.show_stastus()
+            monster.show_status()
             if player.hp == 0:
                 print('You die')
                 break
@@ -60,7 +60,7 @@ def call_generic():
 
 if monster.name == 'sphinx':
     call_sphinx()
-# elif monster.name == 'magician':
-#     call_magician()
+elif monster.name == 'magician':
+    call_magician()
 else:
     call_generic()

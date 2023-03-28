@@ -51,7 +51,7 @@ name = input()
 time.sleep(0.5)
 print(f'플레이어 생성: {name}')
 
-monster = ['ork', 'fairy', 'sphinx', 'magician']
+monster = ['fairy', 'sphinx', 'magician']
 
 # 몬스터 랜덤 생성
 m_ran = random.choice(monster)
